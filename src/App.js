@@ -48,7 +48,7 @@ function App() {
             element={
               <div className="container my-3">
                 <TextForm
-                  heading="Enter your text here for analyzing"=
+                  heading="Enter your text here for analyzing"
                   showAlert={showAlert}
                 />
               </div>
