@@ -2,13 +2,13 @@ import React from "react";
 
 function Alert({ alert }) {
   return (
-    alert && (
-      <div>
+    <div style={{ height: "50px" }}>
+      {alert && (
         <div className={`alert alert-${alert.type}`} role="alert">
           <strong>{alert.msg}</strong>
         </div>
-      </div>
-    )
+      )}
+    </div>
   );
 }
 

@@ -51,19 +51,39 @@ export default function TextForm(props) {
           onChange={handleChange}
         ></textarea>
       </div>
-      <button className="btn btn-primary mx-1" onClick={handleUpClick}>
+      <button
+        className="btn btn-primary mx-1 my-1"
+        onClick={handleUpClick}
+        disabled={text.length === 0}
+      >
         Convert to Uppercase
       </button>
-      <button className="btn btn-primary mx-1" onClick={handleDownClick}>
+      <button
+        className="btn btn-primary mx-1 my-1"
+        onClick={handleDownClick}
+        disabled={text.length === 0}
+      >
         Convert to Lower case
       </button>
-      <button className="btn btn-primary mx-1" onClick={handleClear}>
+      <button
+        className="btn btn-primary mx-1 my-1"
+        onClick={handleClear}
+        disabled={text.length === 0}
+      >
         Clear Text
       </button>
-      <button className="btn btn-primary mx-1" onClick={handleCopy}>
+      <button
+        className="btn btn-primary mx-1 my-1"
+        onClick={handleCopy}
+        disabled={text.length === 0}
+      >
         Copy Text
       </button>
-      <button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>
+      <button
+        className="btn btn-primary mx-1 my-1"
+        onClick={handleExtraSpaces}
+        disabled={text.length === 0}
+      >
         Remove Extra Space
       </button>
       <div className="container my-5">

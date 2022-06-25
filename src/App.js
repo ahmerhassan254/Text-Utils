@@ -27,6 +27,7 @@ function App() {
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
+
       showAlert("Light Mode is enabled !!!", "success");
     }
   };
@@ -50,6 +51,7 @@ function App() {
                 <TextForm
                   heading="Enter your text here for analyzing"
                   showAlert={showAlert}
+                  mode={mode}
                 />
               </div>
             }
