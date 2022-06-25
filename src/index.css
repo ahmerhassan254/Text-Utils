@@ -1,3 +1,6 @@
 textarea {
   resize: none;
 }
+.accordion-button::after {
+  filter: invert(1);
+}
